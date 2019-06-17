@@ -1,0 +1,132 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+::-webkit-input-placeholder {
+    color: var(--grey);
+}
+
+#search {
+    display: none;
+    transition: .3s ease;
+}
+
+#burger {
+    display: none;
+}
+
+#search > #clickBox {
+    width: 100%;
+    height: 38%;
+    position: absolute;
+    bottom: 20%;
+}
+
+    #search > #clickBox > div {
+        position: absolute;
+        width: 45%;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1, 1);
+        display: flex;
+        transition: width .3s ease;
+    }
+
+        #search > #clickBox > div > #search_ico {
+            width: 30%;
+            position: relative;
+            top: 4px;
+        }
+
+        #search > #clickBox > div > input {
+            font-size: 1.1em;
+            padding-left: 15px;
+            width: 60%;
+            font-size: 2.1em;
+            border: none;
+            background: transparent;
+            font-family: "Open Sans";
+            font-weight: 400;
+        }
+
+#burger > #clickBox {
+    width: 50%;
+    height: 15%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    bottom: 2.5%;
+}
+
+    #burger > #clickBox > #frame {
+        background: var(--grey);
+        width: 32%;
+        padding-top: 32%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0, 0);
+        border-radius: 50%;
+        transition: transform 0.35s cubic-bezier(.53,.07,0,1.37);
+    }
+
+        #burger > #clickBox > #frame > div {
+            background: white;
+            width: 50%;
+            padding-top: 8%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(50%, -50%);
+            border-radius: 10px;
+        }
+
+            #burger > #clickBox > #frame > div:nth-child(1) {
+                top: 35%;
+            }
+
+            #burger > #clickBox > #frame > div:nth-child(3) {
+                top: 65%;
+            }
+
+#menu {
+    background: var(--grey);
+    position: absolute;
+    border-radius: 300px;
+    top: 75%;
+    left: 42%;
+    right: 42%;
+    bottom: 15%;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(.06,.5,.06,1);
+    color: var(--dark);
+}
+
+    #menu > h1 {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 50px;
+        padding-top: 40px;
+        font-size: 2em;
+    }
+
+    #menu > a {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 1.5em;
+    }
+
+    #menu > #exit {
+        width: 10%;
+        padding: 50px;
+        margin-left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    #menu > #exit > svg {
+        width: 100%;
+    }

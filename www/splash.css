@@ -1,0 +1,43 @@
+#splash {
+    
+}
+    #splash #blanket {
+        display: none;
+        background: #680034;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        transition: top 0.6s ease;
+    }
+
+    #splash #logo {
+        width: 68%;
+        position: absolute;
+        left: 50%;
+        top: 47%;
+        transform: translate(-50%, -50%);
+    }
+
+    #splash #clean-logo {
+        display: none;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        transition: opacity 0.5s linear;
+    }
+
+    #splash #bm {
+        opacity: 1;
+        transition: opacity 0.5s linear;
+    }
+
+    #splash #text {
+        /*display: none;*/
+        width: 67%;
+        position: absolute;
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%, -50%);
+    }

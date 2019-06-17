@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Blank App</title>
+    <link href="globalStyles.css" rel="stylesheet" />
+    <link href="main.css" rel="stylesheet" />
+    <link href="splash.css" rel="stylesheet" />
+</head>
+<body style="overflow: hidden; max-height: 100%">
+    <div id="splash">
+        <div id="blanket"></div>
+        <div id="logo">
+            <div id="bm"></div>
+            <img id="clean-logo" src="./assets/logo.svg" /> 
+        </div>
+
+        <div id="text">
+            <svg version="1.2" baseProfile="tiny" id="text" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                 x="0px" y="0px" viewBox="0 0 138.1 42.1" xml:space="preserve">
+                <g>
+                    <path fill="#FFF" d="M24.3,28.7l0.1,0.4l0.2-0.4l8.1-18.2H35l-9.6,20.7h-2.1l-9.6-20.7h2.4L24.3,28.7z" />
+                    <path fill="#FFF" d="M52.3,31.3h-2.2V10.6h2.2V31.3z" />
+                    <path fill="#FFF" d="M89.2,31.3h-2.2L72.3,13.5v17.7h-2.2V10.6h2.2l14.8,17.8V10.6h2.2V31.3z" />
+                    <path fill="#FFF" d="M124.3,10.6v14.2c0,1.4-0.4,2.6-1.1,3.6c-0.8,1-1.8,1.8-3.2,2.4c-1.4,0.6-2.9,0.8-4.7,0.8
+		                    c-2.7,0-4.9-0.6-6.5-1.8c-1.6-1.2-2.5-2.8-2.5-5V10.6h2.2v14c0,0.1,0,0.1,0,0.2c0.2,4.8,6.9,4.7,6.9,4.7s5.8,0.1,6.7-3.7
+		                    c0.1-0.4,0.1-0.8,0.1-1.2v-14H124.3z" />
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <form id="search" action="/wineInfo.html">
+        <label for="search-input" id="clickBox">
+            <div>
+                <svg version="1.2" baseProfile="tiny" id="search_ico" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
+                    <circle fill="none" stroke="#7BB758" stroke-width="35" stroke-miterlimit="10" cx="208.2" cy="191.1" r="167.8" />
+                    <line fill="none" stroke="#7BB758" stroke-width="48" stroke-miterlimit="10" stroke-linecap="round" x1="435.6" y1="457.8" x2="327" y2="328" />
+                </svg>
+                <input id="search-input" type="text" name="search" placeholder="Søg..." />
+            </div>
+        </label>
+    </form>
+
+    <div id="burger">
+        <div id="clickBox">
+            <div id="frame">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu">
+        <h1>VINU.DK</h1>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <div id="exit">
+            <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                 x="0px" y="0px" viewBox="0 0 32 32" xml:space="preserve">
+                <line fill="none" stroke="#FFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="4.9" y1="4.9" x2="27.1" y2="27.1" />
+                <line fill="none" stroke="#FFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="27.1" y1="5" x2="4.9" y2="27.1" />
+            </svg>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+
+    <script src="./plugins/jquery-3.4.1.min.js"></script>
+
+    <script src="./plugins/lottie.min.js"></script>
+    <script src="./plugins/anime.min.js"></script>
+
+    <script src="main.js"></script>
+    <script src="splash.js"></script>
+</body>
+</html>

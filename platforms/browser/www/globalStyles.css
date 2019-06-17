@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("/assets/fonts/open sans/OpenSans-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/assets/fonts/open sans/OpenSans-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "p22Demi";
+    src: url("/assets/fonts/P22 Underground demi.ttf");
+}
+
+:root {
+    --green: #7BB758;
+    --grey: #C5C5C5;
+    --red: #50162C;
+    --red-light: #680034;
+    --dark: #17131E;
+}
+
+:focus {
+    outline: none;
+}
+
+* {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    color: var(--dark);
+}
+
+h1 {
+    font-family: p22Demi;
+    letter-spacing: 10px;
+}
+
+a {
+    text-decoration: none;
+}
