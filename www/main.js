@@ -54,11 +54,11 @@ function logoInit() {
 
 
 function openMenu() {
-    alert("Open Menu");
+
 }
 
 function closeMenu() {
-    alert("Close Menu");
+
 }
 
 
