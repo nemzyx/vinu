@@ -24,7 +24,23 @@ function init() {
 
     setTimeout(function () {
         $("#burger > #clickBox > #frame").css("transform", "translate(-50%, -50%) scale(0.9, 0.9)");
+        $("#burger > #clickBox > #frame").css("top", "50%");
     }, 150);
+
+    var menuOpen = false;
+
+    $("#burger > #clickBox").click(function () {
+        if (!menuOpen) {
+            openMenu();
+            menuOpen = true;
+        }
+        else {
+            closeMenu();
+            menuOpen = false;
+        }
+    });
+
+    searchInteraction();
 }
 
 function logoInit() {
@@ -35,87 +51,66 @@ function logoInit() {
     $("#clean-logo").css("transform", "translate(0, -50%)");
 }
 
-$("#burger > #clickBox").click(function () {
-    openMenu();
-});
 
-$("#frame").click(function () {
-    openMenu();
-});
-
-$("#menu > #exit").click(function () {
-    closeMenu();
-});
 
 function openMenu() {
-    $("#menu").css({
-        "top": "20px",
-        "bottom": "20px",
-        "right": "20px",
-        "left": "20px",
-        "opacity": "1",
-        "border-radius": "20px"
-    });
+    alert("Open Menu");
 }
 
 function closeMenu() {
-    $("#menu").css({
-        "top": "75%",
-        "bottom": "15%",
-        "right": "42%",
-        "left": "42%",
-        "opacity": "0",
-        "border-radius": "300px"
-    });
+    alert("Close Menu");
 }
 
-$("#search > #clickBox").click(function () {
-    searchMove.play();
-    burgerMove.play();
-    $("#search > #clickBox > div").css("width", "120%");
-    $("#search > #clickBox > div > input").css("width", "180%");
-    $("#search > #clickBox > div").css("transform", "translate(-50%, -50%) scale(0.7, 0.7)");
-});
 
-$("#logo").click(function () {
-    searchMoveBack.play();
-    burgerMoveBack.play();
-    $("#search > #clickBox > div").css("width", "45%");
-    $("#search > #clickBox > div > input").css("width", "60%");
-    $("#search > #clickBox > div").css("transform", "translate(-50%, -50%) scale(1, 1)");
-    document.getElementById("search-input").value = "";
-});
+function searchInteraction() {
+    $("#search > #clickBox").click(function () {
+        searchMove.play();
+        burgerMove.play();
+        $("#search > #clickBox > div").css("width", "120%");
+        $("#search > #clickBox > div > input").css("width", "180%");
+        $("#search > #clickBox > div").css("transform", "translate(-50%, -50%) scale(0.7, 0.7)");
+    });
 
-var searchMove = anime({
-    targets: "#search > #clickBox > div",
-    top: "20%",
-    left: "50%",
-    autoplay: false,
-    easing: 'cubicBezier(.32,.01,.22,1)',
-    duration: 300
-});
+    $("#logo").click(function () {
+        searchMoveBack.play();
+        burgerMoveBack.play();
+        $("#search > #clickBox > div").css("width", "45%");
+        $("#search > #clickBox > div > input").css("width", "60%");
+        $("#search > #clickBox > div").css("transform", "translate(-50%, -50%) scale(1, 1)");
+        document.getElementById("search-input").value = "";
+    });
 
-var burgerMove = anime({
-    targets: "#frame",
-    top: "150%",
-    autoplay: false,
-    easing: 'cubicBezier(.32,.01,.22,1)',
-    duration: 300
-});
+    var searchMove = anime({
+        targets: "#search > #clickBox > div",
+        top: "20%",
+        left: "50%",
+        autoplay: false,
+        easing: 'cubicBezier(.32,.01,.22,1)',
+        duration: 300
+    });
 
-var searchMoveBack = anime({
-    targets: "#search > #clickBox > div",
-    top: "55%",
-    left: "50%",
-    autoplay: false,
-    easing: 'cubicBezier(.32,.01,.22,1)',
-    duration: 300
-});
+    var burgerMove = anime({
+        targets: "#frame",
+        top: "150%",
+        autoplay: false,
+        easing: 'cubicBezier(.32,.01,.22,1)',
+        duration: 300
+    });
 
-var burgerMoveBack = anime({
-    targets: "#frame",
-    top: "50%",
-    autoplay: false,
-    easing: 'cubicBezier(.32,.01,.22,1)',
-    duration: 300
-});
+    var searchMoveBack = anime({
+        targets: "#search > #clickBox > div",
+        top: "55%",
+        left: "50%",
+        autoplay: false,
+        easing: 'cubicBezier(.32,.01,.22,1)',
+        duration: 300
+    });
+
+    var burgerMoveBack = anime({
+        targets: "#frame",
+        top: "50%",
+        autoplay: false,
+        easing: 'cubicBezier(.32,.01,.22,1)',
+        duration: 300
+    });
+}
