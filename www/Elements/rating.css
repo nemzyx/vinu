@@ -1,6 +1,5 @@
 #rating {
-    margin: 50px;
-    background: rgba(255, 0, 0, 0.1);
+    padding: 0 var(--wineInfoSidePadding);
 }
 
 #rating > div {
@@ -8,15 +7,16 @@
 }
 
 #rating .title {
-    flex: 1.2;
+    flex: 1.5;
+    font-size: 0.8em;
 }
 
 #rating .num {
-    flex: 0.7;
+    flex: 1;
 }
 
 #rating .stars {
-    flex: 2;
+    flex: 3;
 }
 
 .grey {
