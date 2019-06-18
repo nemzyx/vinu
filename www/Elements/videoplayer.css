@@ -1,7 +1,93 @@
 #videoplayer {
-    padding-top: 50px;
+    position: relative;
 }
 
-#videoplayer > #overlay {
-    
-}
+    #videoplayer > #overlay {
+        pointer-events: none;
+        background: var(--dark);
+        position: absolute;
+        top: 0;
+        bottom: 5px;
+        right: 0;
+        left: 0;
+    }
+
+    #videoplayer > #play-btn {
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.1, 0.1);
+    }
+
+    #videoplayer > #timeline {
+        background: rgba(255, 255, 255, 0.4);
+        position: absolute;
+        height: 2px;
+        bottom: 5px;
+        right: 0;
+        left: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+        #videoplayer > #timeline:after {
+            content: "";
+            display: block;
+            background: var(--green);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0%;
+            right: 95%;
+        }
+
+        #videoplayer > #timeline > #handle {
+            background: var(--green);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 100;
+            top: 50%;
+            left: 5%;
+            transform: translate(-50%, -50%) scale(1.2, 1.2);
+        }
+
+    #videoplayer > #nav {
+        background: rgba(255, 255, 255, 0.0);
+        position: absolute;
+        bottom: 20px;
+        height: 28px;
+        left: 0;
+        right: 0;
+    }
+
+        #videoplayer > #nav > #fullscreen {
+            position: absolute;
+            right: 20px;
+            height: 100%;
+            transform: scale(0.8, 0.8);
+        }
+
+            #videoplayer > #nav > #fullscreen > svg {
+                height: 100%;
+            }
+
+        #videoplayer > #nav > .timestamp {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            color: white;
+            letter-spacing: 0.13em;
+            font-size: 0.85em;
+        }
+
+        #videoplayer > #nav > #current {
+            left: 20px;
+        }
+
+        #videoplayer > #nav > #end {
+            right: 65px;
+            text-align: right;
+        }

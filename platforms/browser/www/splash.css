@@ -3,7 +3,8 @@
 }
     #splash #blanket {
         display: none;
-        background: #680034;
+        background: var(--red);
+        background-image: linear-gradient(var(--red-light), var(--red));
         height: 100%;
         position: absolute;
         top: 0;

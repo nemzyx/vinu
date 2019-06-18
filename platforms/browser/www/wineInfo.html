@@ -11,17 +11,10 @@
     <a id="back-btn" href="/">
         <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
              x="0px" y="0px" viewBox="0 0 20 32" xml:space="preserve">
-            <line fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="15.5" y1="4.9" x2="4.4" y2="16" />
-            <line fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="15.5" y1="27.1" x2="4.4" y2="16" />
+        <line fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="15.5" y1="4.9" x2="4.4" y2="16" />
+        <line fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="15.5" y1="27.1" x2="4.4" y2="16" />
         </svg>
     </a>
-    <div id="burger">
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
     <img id="cover-img" src="/assets/wine.png" />
     <div id="gradient-cover">
         <div></div>
@@ -35,21 +28,14 @@
     <div id="moreArrow">
         <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
              x="0px" y="0px" viewBox="0 0 32 20" xml:space="preserve">
-            <line fill="none" stroke="#C5C5C5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="4.8" y1="4.4" x2="16" y2="12.7" />
-            <line fill="none" stroke="#C5C5C5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="27.1" y1="4.4" x2="16" y2="12.7" />
+        <line fill="none" stroke="#C5C5C5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="4.8" y1="4.4" x2="16" y2="12.7" />
+        <line fill="none" stroke="#C5C5C5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="27.1" y1="4.4" x2="16" y2="12.7" />
         </svg>
     </div>
 
     <div id="container">
-        <div style="order: 0">First stat</div>
-        <div style="order: 3">Second stat</div>
-        <div style="order: 2">Third stat</div>
-        <div style="order: 1">Fourth stat</div>
-        <div style="order: 3">Fifth stat</div>
-        <div style="order: 3">Sixth stat</div>
-        <div style="order: 3">Seventh stat</div>
-        <div style="order: 3">Eighth stat</div>
-        <div style="order: 3">Ninth stat</div>
+        <div style="order: 0" insert-component="/elements/rating.html" class="HTMLcomponent"></div>
+        <div style="order: 1" insert-component="/elements/videoplayer.html" class="HTMLcomponent"></div>
     </div>
 
     <script type="text/javascript" src="cordova.js"></script>
@@ -60,5 +46,8 @@
     <script src="./plugins/anime.min.js"></script>
 
     <script src="wineInfo.js"></script>
+
+    <!--This is the component builder - puts everthing from /elements onto this page-->
+    <script src="componentBuilder.js"></script>    
 </body>
 </html>
