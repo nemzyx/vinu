@@ -80,6 +80,7 @@ body, html {
             left: 0;
             transform: translate(50%, -50%);
             border-radius: 10px;
+            transition: .13s ease-out;
         }
 
             #burger > #clickBox > #frame > div:nth-child(2) {
@@ -96,11 +97,18 @@ body, html {
             bottom: 0;
             left: 0;
             right: 0;
-            background: var(--dark);
+            background: var(--grey);
             border-radius: 50%;
-            transform: scale(16, 16);
+            transition: 0.3s cubic-bezier(.11,.72,.29,1);
         }
 
 #menuDim {
-
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: 0;
 }

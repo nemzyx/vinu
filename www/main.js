@@ -54,11 +54,68 @@ function logoInit() {
 
 
 function openMenu() {
+    var scale = "-670%";
+    $('#burger > #clickBox > #frame > span').css({
+        "top": scale,
+        "right": scale,
+        "left": scale,
+        "bottom": scale,
+        "background": "var(--dark)"
+    });
 
+    $('#menuDim').css("opacity", "0.3");
+
+    $("#burger > #clickBox > #frame > div").each(function (i) {
+        if (i == 0) {
+            $(this).css({
+                "transform": "translate(50%, -50%) rotate(45deg)",
+                "top": "50%"
+            });
+        }
+
+        if (i == 2) {
+            $(this).css({
+                "transform": "translate(50%, -50%) rotate(-45deg)",
+                "top": "50%"
+            });
+        }
+
+        if (i == 1) {
+            $(this).css("opacity", "0");
+        }
+    });
 }
 
 function closeMenu() {
+    $('#burger > #clickBox > #frame > span').css({
+        "top": "0",
+        "right": "0",
+        "left": "0",
+        "bottom": "0",
+        "background": "var(--grey)"
+    });
 
+    $('#menuDim').css("opacity", "0");
+
+    $("#burger > #clickBox > #frame > div").each(function (i) {
+        if (i == 0) {
+            $(this).css({
+                "transform": "translate(50%, -50%) rotate(0deg)",
+                "top": "35%"
+            });
+        }
+
+        if (i == 2) {
+            $(this).css({
+                "transform": "translate(50%, -50%) rotate(0deg)",
+                "top": "65%"
+            });
+        }
+
+        if (i == 1) {
+            $(this).css("opacity", "1");
+        }
+    });
 }
 
 
