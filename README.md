@@ -1,14 +1,14 @@
-# A Blank PhoneGap App
+# Vinu
+Dette er repository for vinsmagnings-appen Vinu
 
-## Usage
+## Teknologier
+Liste over teknologier der bliver brugt
 
-### PhoneGap CLI
+### PhoneGap
+Phonegap bruges til at kompilerer appen
 
-    $ phonegap create my-app --template blank
+### Anime.js
+Anime.js er et fantastisk lightweight animations library i JS
 
-### Desktop
-
-In your browser, open the file:
-
-    /www/index.html
-
+### Bodymovin / Lottie.js
+AirBnb har udviklet dette After Effects plugin + JavaScript library, som tillader export af SVG animationer fra AE til browseren. Dette bruges til splashscreen
