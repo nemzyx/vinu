@@ -1,0 +1,42 @@
+#rating {
+    margin: 50px;
+    background: rgba(255, 0, 0, 0.1);
+}
+
+#rating > div {
+    display: flex;
+}
+
+#rating .title {
+    flex: 1.2;
+}
+
+#rating .num {
+    flex: 0.7;
+}
+
+#rating .stars {
+    flex: 2;
+}
+
+.grey {
+    color: var(--grey);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+#rating .col {
+    height: 30px;
+}
