@@ -1,0 +1,13 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    margin-bottom: 20px;
+}
+
+.info {
+    text-align: center;
+    margin: 5px 0;
+}
