@@ -1,6 +1,10 @@
-﻿* {
+﻿/** {
     margin: 0;
     padding: 0;
+}*/
+
+.otherInfo {
+    padding: 0 var(--wineInfoSidePadding);
 }
 
 .heading {
@@ -9,5 +13,5 @@
 
 .info {
     text-align: center;
-    margin: 5px 0;
+    margin: 0px 0;
 }

@@ -1,0 +1,112 @@
+#videoplayer {
+    position: relative;
+}
+
+    #videoplayer > #overlay {
+        pointer-events: none;
+        background: var(--dark);
+        position: absolute;
+        top: 0;
+        bottom: 5px;
+        right: 0;
+        left: 0;
+    }
+
+    #videoplayer > #play-btn {
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.1, 0.1);
+        transition: opacity .5s cubic-bezier(.23,.97,.24,.99);
+    }
+
+    #videoplayer > #timeline {
+        background: rgba(255, 255, 255, 0.4);
+        position: absolute;
+        height: 2px;
+        bottom: 5px;
+        right: 0;
+        left: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+        #videoplayer > #timeline > #after {
+            content: "";
+            display: block;
+            background: var(--green);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0%;
+            right: 95%;
+        }
+
+        #videoplayer > #timeline > #handle {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 100;
+            top: 50%;
+            left: 5%;
+            transform: translate(-50%, -50%) scale(3.5, 3.5);
+            transition: transform .5s ease-out;
+        }
+
+            #videoplayer > #timeline > #handle:after {
+                background: var(--green);
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                position: absolute;
+                z-index: 100;
+                top: 50%;
+                left: 50%;
+                content: "";
+                display: block;
+                transform: translate(-50%, -50%) scale(0.4, 0.4);
+            }
+
+    #videoplayer > #nav {
+        pointer-events: none;
+        position: absolute;
+        bottom: 20px;
+        height: 28px;
+        left: 0;
+        right: 0;
+        transition: .2s ease-out;
+    }
+
+        #videoplayer > #nav > #fullscreen {
+            pointer-events: all;
+            padding: 10px;
+            position: absolute;
+            right: 10px;
+            top: -10px;
+            height: 100%;
+            transform: scale(0.8, 0.8);
+        }
+
+            #videoplayer > #nav > #fullscreen > svg {
+                height: 100%;
+            }
+
+        #videoplayer > #nav > .timestamp {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            color: white;
+            letter-spacing: 0.13em;
+            font-size: 0.85em;
+        }
+
+        #videoplayer > #nav > #current {
+            left: 20px;
+        }
+
+        #videoplayer > #nav > #end {
+            right: 65px;
+            text-align: right;
+        }

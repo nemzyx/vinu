@@ -1,6 +1,10 @@
-* {
+/** {
     padding: 0;
     margin: 0;
+}*/
+
+.wineProfile {
+    padding: 0 var(--wineInfoSidePadding);
 }
 
 .heading {
@@ -8,11 +12,12 @@
 }
 
 .stat {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .statLabel {
-    font-family: 'Open Sans Light', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     display: inline-block;
     vertical-align: middle;
     width: 100px;
@@ -26,7 +31,7 @@
 
 .statPoint {
     display: inline-block;
-    width: 35px;
+    width: 20px;
     height: 5px;
     margin: 0 2px;
     border-radius: 10px;

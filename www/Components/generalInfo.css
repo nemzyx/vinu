@@ -1,6 +1,10 @@
-﻿* {
+﻿/*#generalInfo *, info, infoHeading {
     margin: 0;
     padding: 0;
+}*/
+
+.generalInfo {
+    padding: 0 20px;
 }
 
 .heading {
