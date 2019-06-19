@@ -21,7 +21,7 @@
         <div id="end" class="timestamp">00:00</div>
     </div>
     <div id="timeline">
-        <div id="handle" ontouchmove="updateTime(event)"></div>
+        <div id="handle" ontouchstart="drag=true" ontouchend="drag=false" ontouchmove="updateTime(event)"></div>
         <div id="after"></div>
     </div>
 </div>
