@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\www\\Elements"
+    "\\Management",
+    "\\www",
+    "\\www\\plugins"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\www\\plugins\\jquery-3.4.1.min.js",
   "PreviewInSolutionExplorer": false
 }

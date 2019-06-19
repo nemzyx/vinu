@@ -4,13 +4,7 @@
 }
 
 .heading {
-    font-family: 'p22Demi', sans-serif;
-    letter-spacing: 3px;
     margin-bottom: 20px;
-}
-
-.wineProfile {
-    padding: 20px;
 }
 
 .stat {
@@ -35,7 +29,10 @@
     width: 35px;
     height: 5px;
     margin: 0 2px;
-    background-color: red;
     border-radius: 10px;
     background-color: #504d54;
+}
+
+.active {
+    background-color: var(--green);
 }

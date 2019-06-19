@@ -1,5 +1,6 @@
 
 .vs/slnx.sqlite
+<<<<<<< HEAD
 .vs/slnx.sqlite
 .vs/slnx.sqlite-journal
 .vs/Vinu/v16/.suo
@@ -17,3 +18,6 @@ platforms/browser/www/Elements/videoplayer.html
 platforms/browser/www/globalStyles.css
 platforms/browser/www/wineInfo.css
 platforms/browser/www/wineInfo.html
+=======
+*.sqlite
+>>>>>>> b824bb7d90a4f06d8b838099dc25e52b7c573a50
