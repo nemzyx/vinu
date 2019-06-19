@@ -11,7 +11,11 @@
     margin-bottom: 20px;
 }
 
+.infoHeading {
+    margin: 0;
+}
+
 .info {
     text-align: center;
-    margin: 0px 0;
+    margin: 10px 0;
 }
