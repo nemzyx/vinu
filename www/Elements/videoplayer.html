@@ -1,0 +1,29 @@
+<link href="elements/videoplayer.css" rel="stylesheet" />
+
+<div id="videoplayer">
+    <video id="video" width="100%">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+    <div id="overlay"></div>
+    <svg version="1.2" baseProfile="tiny" id="play-btn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+         x="0px" y="0px" viewBox="0 0 32 32" xml:space="preserve">
+        <path fill="var(--green)" d="M27.5,14.7l-16-12.3c-1.1-0.8-2.7-0.1-2.7,1.3v24.6c0,1.4,1.6,2.2,2.7,1.3l16-12.3C28.4,16.7,28.4,15.3,27.5,14.7z" />
+    </svg>
+    <div id="nav">
+        <div id="fullscreen">
+            <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                 x="0px" y="0px" viewBox="0 0 32 32" xml:space="preserve">
+                <path fill="none" stroke="rgba(255, 255, 255, 1)" stroke-width="3.5" stroke-linejoin="round" stroke-miterlimit="10" d="M4.2,11.3V4.2H11 M4.2,20.7
+	            v7.2H11 M27.8,11.3V4.2h-7.5 M20.3,27.8h7.5v-7.2" />
+            </svg>
+        </div>
+        <div id="current" class="timestamp">00:00</div>
+        <div id="end" class="timestamp">00:00</div>
+    </div>
+    <div id="timeline">
+        <div id="handle" ontouchmove="updateTime(event)"></div>
+        <div id="after"></div>
+    </div>
+</div>
+
+<script src="/elements/videoplayer.js"></script>

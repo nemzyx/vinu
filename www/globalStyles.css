@@ -21,6 +21,8 @@
     --red: #50162C;
     --red-light: #680034;
     --dark: #17131E;
+    --gold: #B59752;
+    --wineInfoSidePadding: 14%;
 }
 
 :focus {
