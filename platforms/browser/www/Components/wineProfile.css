@@ -1,43 +1,32 @@
-/** {
-    padding: 0;
-    margin: 0;
-}*/
-
-.wineProfile {
+#wineProfile {
     padding: 0 var(--wineInfoSidePadding);
 }
 
-.heading {
-    margin-bottom: 20px;
-}
+    #wineProfile .stat {
+        margin-bottom: 10px;
+    }
 
-.stat {
-    margin: 10px 0;
-}
+    #wineProfile .label {
+        color: var(--grey);
+        font-weight: 300;
+    }
 
-.statLabel {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    display: inline-block;
-    vertical-align: middle;
-    width: 100px;
-}
+    #wineProfile .statmeter {
+        flex: 1.8;
+    }
+    #wineProfile .statmeter .container {
+        height: 100%;
+        align-items: center;
+    }
 
-.statMeter {
-    display: inline-block;
-    vertical-align: middle;
-    float: right;
-}
+    #wineProfile .statmeter .bar {
+        flex: 1;
+        background: var(--grey);
+        height: 5px;
+        margin: 0 4px;
+        border-radius: 100px;
+    }
 
-.statPoint {
-    display: inline-block;
-    width: 20px;
-    height: 5px;
-    margin: 0 2px;
-    border-radius: 10px;
-    background-color: #504d54;
-}
-
-.active {
-    background-color: var(--green);
+#wineProfile .lit {
+    background: var(--green) !important;
 }
