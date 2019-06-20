@@ -1,32 +1,34 @@
-#wineProfile {
+.wineProfile {
     padding: 0 var(--wineInfoSidePadding);
 }
 
-    #wineProfile .stat {
+    .wineProfile .stat {
         margin-bottom: 10px;
     }
 
-    #wineProfile .label {
+    .wineProfile .label {
         color: var(--grey);
         font-weight: 300;
     }
 
-    #wineProfile .statmeter {
+    .wineProfile .statmeter {
         flex: 1.8;
     }
-    #wineProfile .statmeter .container {
+    .wineProfile .statmeter .container {
         height: 100%;
         align-items: center;
     }
 
-    #wineProfile .statmeter .bar {
+    .wineProfile .statmeter .bar {
         flex: 1;
         background: var(--grey);
         height: 5px;
         margin: 0 4px;
         border-radius: 100px;
+        opacity: 0.5;
     }
 
-#wineProfile .lit {
+.wineProfile .lit {
     background: var(--green) !important;
+    opacity: 1 !important;
 }

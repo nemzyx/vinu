@@ -1,9 +1,15 @@
 function setProfile(input) {
-    $("#wineProfile .statmeter .container").each(function (i) {
-        $(this).children('.bar').each(function (e) {
-            if (e < input[i]) {
-                $(this).addClass('lit');
-            }
+    $(".wineProfile").each(function () {
+        $(this).each(function () {
+            $(this).children('.stat').each(function (i) {
+                var statmeter = $(this).find(".statmeter").find(".container").children(".bar");
+                $(statmeter).each(function (e) {
+                    var bar = $(this);
+                    if (e < input[i]) {
+                        bar.addClass('lit');
+                    }
+                });
+            });
         });
     });
 }

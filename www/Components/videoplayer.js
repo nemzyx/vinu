@@ -15,7 +15,7 @@ video.addEventListener("click", function () {
 video.addEventListener("ended", function () {
     pauseVideo();
 });
-
+    
 var drag = false;
 
 function playVideo() {
