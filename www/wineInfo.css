@@ -25,6 +25,7 @@ body {
     #back-btn > svg {
         width: 100%;
         overflow: visible;
+        transform: scale(0.9, 0.9);
     }
 
 #cover-img {
@@ -121,37 +122,41 @@ body {
             /*background: rgba(255, 255, 255, 0.05);*/
         }
 
-    #container > #threeStep h1 {
-        text-align: center;
-        font-size: 2.8em;
+    #container > #threeStep {
+        margin-bottom: 50px;
     }
 
-    #container > #threeStep span.numBlock {
-        width: 100%;
-        display: block;
-        text-align: center;
-        padding: 40px 0;
-    }
-
-    #container > #threeStep > .numBlock > span {
-        color: var(--grey);
-    }
-
-        #container > #threeStep > .numBlock > span:first-child {
-            font-size: 1.7em;
+        #container > #threeStep h1 {
+            text-align: center;
+            font-size: 2.8em;
         }
 
-        #container > #threeStep > .numBlock > span:last-child {
-            font-size: 0.8em;
-            font-weight: 300;
-            letter-spacing:2px;
+        #container > #threeStep span.numBlock {
+            width: 100%;
+            display: block;
+            text-align: center;
+            padding: 40px 0;
         }
 
-    #container > #threeStep h1:nth-child(2) {
-        letter-spacing: 6px;
-        margin-top: -20px;
-    }
+        #container > #threeStep > .numBlock > span {
+            color: var(--grey);
+        }
 
-    #container > #threeStep .wineProfile h1 {
-        display: none;
-    }
+            #container > #threeStep > .numBlock > span:first-child {
+                font-size: 1.7em;
+            }
+
+            #container > #threeStep > .numBlock > span:last-child {
+                font-size: 0.8em;
+                font-weight: 300;
+                letter-spacing: 2px;
+            }
+
+        #container > #threeStep h1:nth-child(2) {
+            letter-spacing: 6px;
+            margin-top: -20px;
+        }
+
+        #container > #threeStep .wineProfile h1 {
+            display: none;
+        }

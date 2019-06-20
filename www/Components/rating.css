@@ -6,14 +6,17 @@
     display: flex;
 }
 
-#rating .title {
-    flex: 1.5;
-    font-size: 0.8em;
-}
+    #rating .title {
+        flex: 1.5;
+        font-size: 0.8em;
+        padding-top: 3px;
+    }
 
-#rating .num {
-    flex: 1;
-}
+    #rating .num {
+        flex: 1;
+        font-size: 1.2em;
+        font-weight: 300;
+    }
 
 #rating .stars {
     flex: 3;

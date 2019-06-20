@@ -7,11 +7,19 @@
     padding: 0 var(--wineInfoSidePadding);
 }
 
-.info {
-    text-align: center;
-    margin: 0px 0;
-}
+    .otherInfo .infoHeading {
+        margin: 0;
+        margin-bottom: 5px;
+        font-size: 1.5em;
+        font-weight: 300;
+    }
 
-.grey {
-    color: var(--grey);
-}
+    .otherInfo .info {
+        text-align: center;
+        margin: 0px 0;
+    }
+
+    .otherInfo .grey {
+        color: var(--grey);
+        font-size: 0.9em;
+    }
