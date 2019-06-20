@@ -5,7 +5,7 @@ $("#burger").click(function () {
 setTimeout(function () {
     showMoreArrow.play();
     moreArrowAnim.play();
-}, 5000);
+}, 3000);
 
 var moreArrowAnim = anime({
     targets: '#moreArrow',

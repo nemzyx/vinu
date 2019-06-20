@@ -4,14 +4,18 @@
 }*/
 
 .generalInfo {
-    padding: 0 20px;
-}
-
-.heading {
-    margin-bottom: 20px;
+    padding: 0 var(--wineInfoSidePadding);
 }
 
 .info {
     text-align: center;
     margin: 5px 0;
+}
+
+.infoHeading {
+    margin: 0;
+}
+
+.grey {
+    color: var(--grey);
 }
