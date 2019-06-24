@@ -1,0 +1,39 @@
+.aromaWheel {
+    padding: 0 var(--wineInfoSidePadding);
+    text-align: center;
+}
+
+.aromaWheel .wheel-widget {
+    background: var(--dark);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    z-index: 1000;
+}
+
+    .aromaWheel .wheel-widget #exit {
+        padding: 30px;
+        width: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1001;
+    }
+
+    .aromaWheel .wheel-widget #wheelHTML {
+        position: absolute;
+        top: 50%;
+        left: -20%;
+        width: 230%;
+        /*left: 50%;
+        width: 100%;*/
+        transform: translate(-50%, -50%) rotate(0deg);
+        z-index: 1000;
+    }
+
+        .aromaWheel .wheel-widget #wheelHTML #wheel {
+            /*width: 100%*/
+        }

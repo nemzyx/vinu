@@ -1,4 +1,4 @@
-var overlayOpacity = "0.8";
+var overlayOpacity = "0.6";
 $("#overlay").css("opacity", overlayOpacity);
 
 var video = document.getElementById('video');

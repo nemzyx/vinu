@@ -5,6 +5,7 @@ html {
 body {
     background: var(--dark);
     margin: 0;
+    overflow-x: hidden;
 }
 
 * {
@@ -123,8 +124,11 @@ body {
         }
 
     #container > #threeStep {
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
+        #container > #threeStep > div {
+            padding-bottom: 40px;
+        }
 
         #container > #threeStep h1 {
             text-align: center;
@@ -136,6 +140,7 @@ body {
             display: block;
             text-align: center;
             padding: 40px 0;
+            transform: scale(1.2, 1.2);
         }
 
         #container > #threeStep > .numBlock > span {
@@ -155,6 +160,10 @@ body {
         #container > #threeStep h1:nth-child(2) {
             letter-spacing: 6px;
             margin-top: -20px;
+        }
+
+        #container > #threeStep h1 {
+            margin-top: 0;
         }
 
         #container > #threeStep .wineProfile h1 {

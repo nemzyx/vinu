@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\www",
+    "\\www\\assets",
     "\\www\\Components"
   ],
-  "SelectedNode": "\\www\\wineInfo.js",
+  "SelectedNode": "\\www\\Components\\aroma.html",
   "PreviewInSolutionExplorer": false
 }

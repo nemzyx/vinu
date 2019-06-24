@@ -1,0 +1,7 @@
+.look {
+    padding: 0 var(--wineInfoSidePadding);
+}
+
+    .look div img {
+        width: 100%;
+    }
