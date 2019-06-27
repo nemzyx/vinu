@@ -20,7 +20,17 @@
 
 #rating .stars {
     flex: 3;
+    display: flex;
+    flex-direction: row;
 }
+
+    #rating .stars > div {
+        flex: 1;
+        background-image: url("../assets/icons/star.svg");
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 
 .grey {
     color: var(--grey);

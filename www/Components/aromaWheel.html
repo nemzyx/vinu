@@ -1,12 +1,34 @@
 <link href="components/aromaWheel.css" rel="stylesheet" />
 
 <div class="aromaWheel">
-    <div class="row">
-        <div class="col">
-            Icon
+    <div id="previews">
+        <div class="row">
+            <div class="col">
+                <object class="svg-object" data="assets/icons/jordbaer.svg" type="image/svg+xml"></object>
+                <div class="iconText">
+                    Jordbaer
+                </div>
+            </div>
+            <div class="col">
+                <object class="svg-object" data="assets/icons/kirsebaer.svg" type="image/svg+xml"></object>
+                <div class="iconText">
+                    Kirsebaer
+                </div>
+            </div>
         </div>
-        <div class="col">
-            Icon
+        <div class="row">
+            <div class="col">
+                <object class="svg-object" data="assets/icons/melon.svg" type="image/svg+xml"></object>
+                <div class="iconText">
+                    Melon
+                </div>
+            </div>
+            <div class="col">
+                <object class="svg-object" data="assets/icons/tobak.svg" type="image/svg+xml"></object>
+                <div class="iconText">
+                    Tobak
+                </div>
+            </div>
         </div>
     </div>
     <div class="btn">Open wheel</div>
@@ -581,3 +603,11 @@
 </div>
 
 <script src="components/aromaWheel.js"></script>
+
+<script type="text/javascript">
+    window.addEventListener("load", function () {
+        $('object').contents().find('svg').each(function () {
+            $(this).css("fill", "white");
+        });
+    });
+</script>

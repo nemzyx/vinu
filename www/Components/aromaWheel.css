@@ -3,6 +3,23 @@
     text-align: center;
 }
 
+    .aromaWheel #previews {
+        margin-bottom: 60px;
+        margin-top: -30px;
+    }
+
+        .aromaWheel #previews object {
+            padding: 0 20px;
+            margin-bottom: -10px;
+        }
+
+        .aromaWheel #previews .iconText {
+            color: var(--grey);
+            font-size: 0.8em;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
 .aromaWheel .wheel-widget {
     background: var(--dark);
     position: fixed;

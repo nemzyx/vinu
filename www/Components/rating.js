@@ -12,7 +12,13 @@ function createStars() {
         var starCount = output[0];
         $(".stars").each(function (e) {
             if (e == i) {
-                $(this).html("[Insert " + starCount + " stars here]");
+                //$(this).html("[Insert " + starCount + " stars here]");
+                $(this).children().each(function (y) {
+                    if (y < starCount) {
+                    } else {
+                        $(this).css("background-image", "none");
+                    }
+                });
             }
         });
     });

@@ -3,8 +3,9 @@
     "",
     "\\www",
     "\\www\\assets",
+    "\\www\\assets\\Icons",
     "\\www\\Components"
   ],
-  "SelectedNode": "\\www\\Components\\aroma.html",
+  "SelectedNode": "\\www\\Components\\rating.html",
   "PreviewInSolutionExplorer": false
 }
